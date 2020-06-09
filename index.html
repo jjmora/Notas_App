@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MIS NOTAS APP</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no,
+    initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="contenedor">
+        <div class="main">
+            <div class="headerBox">
+                <div id="menu" onclick="myFunction()">
+                    <div id="bar1" class="bar"></div>
+                    <div id="bar2" class="bar"></div>
+                    <div id="bar3" class="bar"></div>
+                </div>
+                <header class="header">
+                    <h1>Notas 2020</h1>
+                    <h2>V.1.0.0</h2>     
+                </header>
+            </div>
+            <div class="lateralMenu" id="lateralMenu">
+                <ul class="nav" id="nav">
+                    <li>Home</li>
+                    <li>Blog</li>
+                    <li onclick="warning()">Clear all data</li>
+                </ul>
+            </div>
+            <main class="contenido" >
+                <form id="contenido">
+                    <article id="article_1">
+                        <input value="Write your text here" type="text" class="formArticle" maxlength="38" id="txt_1" onclick="test()" onblur="insertData1()">
+                        <img src="pan.png" class="drag">
+                    </article>
+                    <article id="article_2">
+                        <input type="text" class="formArticle" id="txt_2" maxlength="38" onblur="insertData2()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_3">
+                        <input type="text" class="formArticle" id="txt_3" maxlength="38" onblur="insertData3()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_4">
+                        <input type="text" class="formArticle" id="txt_4" maxlength="38" onblur="insertData4()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_5">
+                        <input type="text" class="formArticle" id="txt_5" maxlength="38" onblur="insertData5()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_6">
+                        <input type="text" class="formArticle" id="txt_6" maxlength="38" onblur="insertData6()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_7">
+                        <input type="text" class="formArticle" id="txt_7" maxlength="38" onblur="insertData7()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_8">
+                        <input type="text" class="formArticle" id="txt_8" maxlength="38" onblur="insertData8()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_9">
+                        <input type="text" class="formArticle" id="txt_9" maxlength="38" onblur="insertData9()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+                    <article id="article_10">
+                        <input type="text" class="formArticle" id="txt_10" maxlength="38" onblur="insertData10()">
+                        <img src="pan.png"  class="drag">
+                    </article>
+
+            </form>    
+            </main> 
+            <div class="warning">
+                <div class="warningContainer" id="warningContainer">
+                    <h3>Are you sure?</h3>
+                    <div class="yes_no">
+                        <p onclick="clearAllData()">YES</p>
+                        <P onclick="noClearData()">NO</P>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="operadores">
+                <h3 class="mas" onclick="nuevaEntrada()">+</h3>  
+                <h3 class="menos" onclick="borrarEntrada()">-</h3> 
+            </div> -->
+        </div>
+
+        <footer class="footer">
+            <h3><a href="http:\\www.juanjosemora.es">JJM Apps</a></h3>
+            <p id="log"></p>
+            <h3>Social</h3>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
