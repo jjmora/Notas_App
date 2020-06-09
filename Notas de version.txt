@@ -1,4 +1,0 @@
-- Correccion en margen para pantallas de más de 1365px.
-
-- Salva datos en LocalStorage
-- Arrastra solo del icono
